@@ -13,6 +13,9 @@ import transactions from 'transactions.json';
 export const App = () => {
   return (
     <>
+      <Profile user={user} />
+      <Statistics data={data} />
+      <FriendList friends={friends} />
       <TransactionHistory transactions={transactions} />
     </>
   );
