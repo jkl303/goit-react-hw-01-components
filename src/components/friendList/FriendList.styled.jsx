@@ -18,10 +18,6 @@ export const SpanStyled = styled.span.attrs({
   height: 16px;
   border-radius: 50%;
   background-color: ${({ isOnline }) => {
-    if (isOnline) {
-      return 'green';
-    } else {
-      return 'red';
-    }
+    return isOnline ? 'green' : 'red';
   }};
 `;
